@@ -92,6 +92,7 @@ class TaskService(private val repository: TaskRepository) {
     fun deleteTask(id: Long): String {
         checkForTaskId(id)
         repository.deleteById(id)
-        return "Task with id: $id has been deleted."
+        return "Task with ID: $id has been deleted."
     }
+    
 }
